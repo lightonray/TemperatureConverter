@@ -15,7 +15,7 @@ namespace TemperatureCoverter
                 Console.WriteLine("The temperature converted from Celsius to Fahrenheit is: " + celsiusTofahrenheit + "°F");
 
                 Console.Write("Please enter the value in Fahrenheit: ");
-                double fahrenheit = double.Parse(Console.ReadLine()); // Converts to double for the users input
+                double fahrenheit = double.Parse(Console.ReadLine()); 
                 double fahrenheitTocelsius = (fahrenheit - 32) * 5 / 9; // // Function that converts the tempereature from fahrenheit to celsius
 
 
