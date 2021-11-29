@@ -6,10 +6,10 @@ namespace TemperatureCoverter
     {
         static void Main(string[] args)
         {
-            try // Does not allow the user to enter invalid values
+            try 
             {
                 Console.Write("Please enter the value in Celsius: ");
-                double celsius = double.Parse(Console.ReadLine()); // Converts to double for the users input
+                double celsius = double.Parse(Console.ReadLine()); 
                 double celsiusTofahrenheit = (celsius * 9 / 5) + 32; // Function that converts the tempereature from celsius to fahrenheit
 
                 Console.WriteLine("The temperature converted from Celsius to Fahrenheit is: " + celsiusTofahrenheit + "°F");
@@ -25,10 +25,10 @@ namespace TemperatureCoverter
                 Console.ReadKey();
 
 
-                double differenceIncelsius = celsius - fahrenheitTocelsius; // Function that shows which value of temperature is bigger
-                double differenceInfahrenheit = fahrenheit - celsiusTofahrenheit; // Function that shows which value of temperature is bigger
+                double differenceIncelsius = celsius - fahrenheitTocelsius; 
+                double differenceInfahrenheit = fahrenheit - celsiusTofahrenheit; 
 
-                if (celsius > fahrenheitTocelsius) // The condition,controls if a program enters a section of code or not
+                if (celsius > fahrenheitTocelsius) 
                 {
                     Console.WriteLine("The entered temperature is bigger and the difference is: " + differenceIncelsius + "°C");
                 }
